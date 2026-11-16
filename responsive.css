@@ -1,0 +1,206 @@
+/* Tablet and phone layout refinements */
+img{max-width:100%}
+.detail-heading,.detail-photo,.story-reader,.architecture-copy,.visit-section>div,.destination-card-copy{min-width:0}
+.detail-heading h1,.destination-card h3,.place-switcher b,.detail-subtitle{overflow-wrap:anywhere}
+.map-wrap,.map-card,.belarus-map,.detail-map{max-width:100%;min-width:0}
+.city-filter,.save-button,.share-button,.story-tab,.timeline-item,.story-controls button{touch-action:manipulation}
+
+@media(max-width:760px){
+  .site-header{padding-left:5%;padding-right:5%;height:68px}
+  .site-header nav{gap:20px}
+  .home-hero{min-height:0;padding:62px 7% 62px;gap:5%}
+  .home-hero .hero-photo{height:330px}
+  .hero-coordinate{left:7%}
+  .detail-shell{padding-left:5%;padding-right:5%}
+  .detail-hero{grid-template-columns:.92fr 1.08fr;gap:4%;}
+  .detail-heading h1{font-size:clamp(41px,5.7vw,57px);line-height:1.02}
+  .detail-photo{height:350px}
+  .facts-row{margin-bottom:65px}
+  .story-layout{gap:6%;grid-template-columns:1.1fr .8fr}
+  .quote-card{padding:20px;min-height:190px}
+  .quote-card p{font-size:18px}
+  .architecture-section{gap:6%;padding-bottom:70px}
+  .architecture-plate{height:260px}
+  .architecture-copy h2{font-size:36px}
+  .timeline-section{margin-left:-5.3vw;margin-right:-5.3vw;padding-left:5.3vw;padding-right:5.3vw}
+  .visit-section{gap:5%;padding:65px 0}
+  .map-card{height:260px}
+  .place-switcher{gap:12px}
+  .timeline-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#c46b46 #d7d2c7;padding:5px 3px 13px;margin-top:22px}
+  .timeline-track{width:max-content;min-width:100%;padding:6px 5px 10px;overflow:visible;margin-top:0}
+  .timeline-item{flex:0 0 125px;scroll-snap-align:start;min-height:66px}
+}
+
+@media(max-width:620px){
+  .site-header{height:62px;padding:0 4.5%}
+  .brand{font-size:15px;gap:7px}
+  .brand-symbol{width:26px;height:26px;font-size:15px}
+  .site-header nav{gap:12px}
+  .site-header nav a{font-size:12px}
+  .header-action span{margin-left:3px}
+  .home-hero{display:flex;flex-direction:column;align-items:stretch;padding:48px 6% 52px;gap:25px}
+  .hero-copy h1{font-size:clamp(54px,15vw,68px);margin:20px 0}
+  .hero-intro{font-size:12px;max-width:330px}
+  .hero-footnote{margin-top:23px}
+  .home-hero .hero-photo{height:clamp(220px,70vw,295px);width:96%;align-self:flex-end}
+  .photo-caption{left:15px;bottom:15px}.photo-caption b{font-size:17px}
+  .intro-band{padding:53px 6% 47px}
+  .intro-grid h2{font-size:clamp(36px,11vw,44px)}
+  .stat-row{gap:9px}.stat-row div{min-width:0}.stat-row span{font-size:12px}
+  .section-wrap{padding:58px 6% 68px}
+  .section-title h2{font-size:clamp(36px,11vw,43px)}
+  .city-filters{gap:2px}.city-filter{min-height:36px;padding:7px 8px;font-size:12px}
+  .destination-image{height:clamp(215px,68vw,270px)}
+  .destination-card h3{font-size:23px}
+  .destination-card-copy>p{font-size:13px;line-height:1.7}
+  .atlas-section{padding:48px 6%}
+  .atlas-copy h2{font-size:42px}
+  .map-wrap{height:clamp(245px,75vw,300px)}
+  .map-map-label{top:8px;right:8px;font-size:12px}
+  .route-cta{padding:30px 6%;gap:13px}
+  .route-cta h2{font-size:clamp(25px,8vw,31px)}
+  .route-mark{flex:0 0 38px}
+  .button-light{margin-left:51px}
+  .site-footer{padding:20px 6%}
+
+  .detail-shell{padding:0 5%}
+  .breadcrumbs{font-size:12px;gap:7px;padding:17px 0 20px}
+  .detail-hero{display:flex;flex-direction:column;align-items:stretch;gap:22px;padding-bottom:24px}
+  .detail-heading .eyebrow{font-size:12px;line-height:1.6;margin-bottom:19px;max-width:85%}
+  .detail-heading h1{font-size:clamp(39px,12vw,55px);margin:14px 0 10px;max-width:100%}
+  .detail-index{font-size:17px;right:0;top:-1px}
+  .detail-subtitle{font-size:13px;margin-bottom:13px}
+  .detail-lead{font-size:13px;line-height:1.8}
+  .detail-actions{margin-top:17px;gap:8px}
+  .save-button,.share-button{min-height:42px;height:auto;padding:0 11px;font-size:12px}
+  .detail-photo{height:clamp(235px,72vw,315px)}
+  .detail-photo figcaption{left:12px;right:10px;bottom:10px;line-height:1.45}
+  .photo-counter{top:10px;right:10px}
+  .facts-row{margin-bottom:48px;padding:14px 0}
+  .fact{padding:0 8px;gap:4px}.fact strong{font-size:18px}.fact span{font-size:12px}
+  .story-section{padding-bottom:53px}
+  .story-section .section-title{flex-direction:column;align-items:flex-start}
+  .story-section .section-title h2{font-size:38px}
+  .story-layout{display:flex;flex-direction:column;gap:22px;margin-top:22px;min-height:0}
+  .story-tabs{gap:15px}
+  .story-tab{min-height:39px;padding-bottom:9px;font-size:12px}
+  .story-panel{padding-top:17px}
+  .story-panel h3{font-size:22px}
+  .story-panel>p:last-child{font-size:12px;line-height:1.8}
+  .story-controls{min-height:42px}
+  .story-controls button{min-width:38px;min-height:38px}
+  .quote-card{min-height:0;padding:19px}
+  .quote-card p{font-size:17px;margin:7px 0 13px}
+  .architecture-section{display:flex;flex-direction:column;align-items:stretch;gap:22px;padding-bottom:52px}
+  .architecture-plate{height:205px;padding:16px}
+  .plate-symbol{font-size:96px;right:25px;top:58px}
+  .plate-city{font-size:19px}
+  .architecture-copy h2{font-size:36px}
+  .architecture-copy>p:not(.eyebrow){font-size:12px}
+  .timeline-section{margin-left:-5.25vw;margin-right:-5.25vw;padding:42px 5.25vw 34px}
+  .timeline-section .section-title{flex-direction:column;align-items:flex-start}
+  .timeline-section .section-title h2{font-size:37px}
+  .timeline-scroll{margin-top:17px;padding-bottom:12px}
+  .timeline-track{padding:6px 5px 10px}
+  .timeline-item{flex-basis:112px;min-height:70px}
+  .timeline-item span{font-size:12px}
+  .timeline-detail{align-items:flex-start;min-height:58px;gap:10px}
+  .timeline-selected-year{font-size:18px}
+  .timeline-selected-copy{font-size:12px;line-height:1.5}
+  .visit-section{display:flex;flex-direction:column;align-items:stretch;gap:23px;padding:52px 0}
+  .visit-section h2{font-size:37px}
+  .visit-copy{font-size:12px}
+  .map-card{height:clamp(225px,68vw,270px)}
+  .credits-section{display:flex;flex-direction:column;gap:10px;padding:22px 0 30px}
+  .credits-section h2{font-size:30px}
+  .source-list a{font-size:12px;line-height:1.5;padding:11px 0}
+  .place-switcher{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr);gap:7px;padding:18px 0 26px}
+  .place-switcher .switcher-all{width:36px;height:36px}
+  .place-switcher b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .place-switcher>a>span{font-size:12px;letter-spacing:.06em}
+  .leaflet-control-zoom a{width:36px!important;height:36px!important;line-height:36px!important}
+  .leaflet-control-attribution{font-size:12px!important}
+  .leaflet-popup-content{margin:10px 12px!important}
+}
+
+@media(max-width:370px){
+  .site-header nav{gap:8px}.site-header nav a{font-size:12px}
+  .brand{font-size:14px}
+  .hero-copy h1{font-size:54px}
+  .stat-row span{max-width:76px}
+  .detail-heading h1{font-size:39px}
+  .detail-actions{flex-wrap:wrap}
+  .fact{padding:0 5px}.fact strong{font-size:16px}
+}
+
+@media(max-height:500px) and (orientation:landscape) and (max-width:900px){
+  .home-hero{min-height:0;padding-top:28px;padding-bottom:44px}
+  .home-hero .hero-photo{height:240px}
+  .detail-photo{height:260px}
+  .atlas-section{padding-top:38px;padding-bottom:38px}
+}
+
+/* Motion: subtle entrances, responsive to the reduced-motion preference below. */
+.home-hero .hero-copy>*{animation:softRise .65s both;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+.home-hero .hero-copy>*:nth-child(2){animation-delay:.06s}.home-hero .hero-copy>*:nth-child(3){animation-delay:.12s}.home-hero .hero-copy>*:nth-child(4){animation-delay:.18s}.home-hero .hero-copy>*:nth-child(5){animation-delay:.24s}
+.home-hero .hero-photo{animation:photoArrive .9s .12s both cubic-bezier(.2,.7,.2,1)}
+.story-tab,.timeline-item,.save-button,.share-button,.button{transition:transform .22s ease,color .22s ease,background-color .22s ease,border-color .22s ease}
+.story-tab:hover{transform:translateY(-2px)}.timeline-item:hover i{transform:scale(1.12)}
+.timeline-item.active i{animation:dotIn .35s ease both}
+.timeline-selected-copy{animation:softRise .28s ease both}
+.map-marker{animation:markerIn .45s cubic-bezier(.2,.7,.2,1) both}
+.architecture-plate:before{animation:orbitSlow 24s linear infinite}.architecture-plate:after{animation:orbitSlow 18s linear infinite reverse}
+@keyframes softRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes photoArrive{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes dotIn{0%{box-shadow:0 0 0 0 #c46b4600}60%{box-shadow:0 0 0 7px #c46b4624}100%{box-shadow:0 0 0 4px #c46b4624}}
+@keyframes markerIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+@keyframes orbitSlow{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.home-hero .hero-copy>*,.home-hero .hero-photo,.architecture-plate:before,.architecture-plate:after,.map-marker{animation:none!important}.story-tab,.timeline-item,.save-button,.share-button,.button{transition:none!important}}
+
+/* Typography and motion polish */
+.hero-copy h1{font-size:clamp(66px,7.4vw,102px)}
+.hero-intro,.intro-grid>p,.atlas-copy>p:not(.eyebrow),.destination-card-copy>p,.detail-lead,.story-panel>p:last-child,.visit-copy{font-size:15px;line-height:1.8}
+.intro-grid h2,.section-title h2,.atlas-copy h2{font-size:clamp(44px,5vw,64px)}
+.stat-row strong{font-size:34px}
+.stat-row span,.card-meta,.image-label,.image-number,.city-filter,.search-box input,.text-link,.section-note{font-size:13px}
+.destination-card h3{font-size:26px}
+.detail-heading h1{font-size:clamp(56px,6.3vw,82px)}
+.detail-subtitle,.detail-lead{font-size:15px}
+.fact strong{font-size:29px}
+.fact span,.story-tab,.story-kicker,.timeline-item span,.timeline-selected-copy,.visit-copy,.address-line strong,.source-list a{font-size:14px}
+.story-panel h3{font-size:29px}
+.quote-card p{font-size:23px}
+.destination-card{transition:opacity .65s ease,transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.destination-card:hover{transform:translateY(-7px);filter:drop-shadow(0 14px 14px #293c3217)}
+.destination-card .destination-image img{transition:transform .75s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.destination-card:hover .destination-image img{transform:scale(1.055);filter:saturate(1.08)}
+.destination-card .image-arrow,.text-link span,.story-controls button,.place-switcher .switcher-all{transition:transform .25s ease,color .25s ease,border-color .25s ease}
+.destination-card:hover .image-arrow{transform:translate(3px,-3px)}
+.text-link:hover span,.story-controls button:hover{transform:translateX(4px)}
+.place-switcher .switcher-all:hover{transform:rotate(8deg);border-color:var(--orange)}
+.detail-photo img{transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .6s ease}
+.detail-photo:hover img{transform:scale(1.025);filter:saturate(1.06)}
+.facts-row.visible .fact{animation:factArrive .55s both cubic-bezier(.2,.7,.2,1)}
+.facts-row.visible .fact:nth-child(2){animation-delay:.09s}.facts-row.visible .fact:nth-child(3){animation-delay:.18s}
+.route-mark{animation:markBreathe 4s ease-in-out infinite}
+@keyframes factArrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes markBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@media(max-width:650px){
+  .hero-copy h1{font-size:clamp(62px,13vw,76px)}
+  .hero-intro,.intro-grid>p,.atlas-copy>p:not(.eyebrow),.destination-card-copy>p,.detail-lead,.story-panel>p:last-child,.visit-copy{font-size:15px}
+  .intro-grid h2,.section-title h2,.atlas-copy h2{font-size:clamp(42px,10vw,50px)}
+  .destination-card h3{font-size:25px}
+  .detail-heading h1{font-size:clamp(48px,11vw,60px)}
+  .story-panel h3{font-size:26px}
+  .fact strong{font-size:24px}
+  .fact span,.story-tab,.timeline-item span,.timeline-selected-copy,.source-list a{font-size:13px}
+  .destination-card:hover{transform:translateY(-3px)}
+}
+@media(max-width:370px){
+  .detail-heading h1{font-size:42px}
+  .hero-copy h1{font-size:58px}
+}
+@media(prefers-reduced-motion:reduce){
+  .facts-row .fact,.route-mark{animation:none!important}
+  .destination-card,.destination-card .destination-image img,.destination-card .image-arrow,.text-link span,.story-controls button,.place-switcher .switcher-all,.detail-photo img{transition:none!important}
+}
